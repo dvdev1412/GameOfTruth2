@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра в правду. Яркие впечатления!</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-container">
+        <div class="create-header-content flex">
+            <div class="created-user">
+                     <span class="user-name">
+
+                     </span>
+            </div>
+            <ul class="header-list list-reset flex">
+                <li class="header-item">
+                    <a href="#">
+                        На главную
+                    </a>
+
+                </li>
+                <li class="header-item">
+                    <a href="#">
+                        Личный кабинет
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</header>
+
+<section class="edit" id="edit">
+    <div class="container edit-container">
+        <div class="edit-content">
+            <h1 class="edit-title">
+                ИГРА В ПРАВДУ
+            </h1>
+            <h2 class="edit-title-2">
+                Выберете комнату или создайте свою
+            </h2>
+        </div>
+
+        <div class="rooms">
+
+            <div class="form-create-container">
+                <form class="game-create-form" th:action="@{/game}" method="post" th:object="${room}">
+                    <label class="name-room" for="nameRoom">Название комнаты:</label>
+                    <input type="text" id="nameRoom" name="nameRoom" required>
+
+                    <label class="password-room" for="passwordRoom">Пароль от комнаты:</label>
+                    <input type="password" id="passwordRoom" name="passwordRoom" required>
+
+                    <button type="submit" class="start-game-button">Начать игру</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-content flex">
+            <h4 class="footer-title">Все права защищены 2024: &copy;</h4>
+        </div>
+
+    </div>
+</footer>
+
+
+
+</body>
+</html>

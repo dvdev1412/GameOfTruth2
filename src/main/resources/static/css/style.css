@@ -1,0 +1,253 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+* ::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1 h2 h3 h4 h5 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+:root {
+    --base: #14141f;
+    --logotext: #6490fa;
+    --yellow-orange: #E1670E;
+    --hover: #1307f4f5;
+    --white: #FFF;
+    --light-telegray: #CACACA;
+    --telegray: rgba(0, 0, 0, 0.5);
+    --dull-gray: #373964;
+    --gray-brown: #414141;
+    --black: #000;
+    
+}
+
+.flex {
+    display: flex;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 320px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #414141;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+   background-color: var(--black);
+   opacity: 0.7;
+   padding: 25px 10px 25px 10px;
+}
+
+.header-content {
+    justify-content: center;
+    text-align: center;
+}
+
+.header-list {
+    color: var(--light-telegray);
+    
+}
+
+.header-item {
+    font-size: 30px;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-item:not(:last-child) {
+       margin-right: 30px;
+}
+
+.header-item:hover {
+    color: red;
+}
+
+.hero {
+   
+}
+
+.hero-container {
+    background-image: url(/img/fon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+   text-align: center;
+   padding-top: 350px;
+   padding-bottom: 350px;
+}
+
+.hero-title {
+    margin: 0;
+    color: var(--light-telegray);
+    margin-bottom: 30px;
+
+   
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+    padding: 25px 23px;
+    background-color: rgba(43, 41, 41, 0.7);
+    border-radius: 5px;
+}
+
+.start-game-button {
+    font-size: 30px;
+    padding: 40px 85px;
+    background-color: red;
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-game-button:hover {
+    opacity: 0.7;
+}
+
+.name, .password {
+    font-size: 30px;
+    color: var(--light-telegray);
+}
+
+.footer-container {
+    background-color: var(--black);
+    opacity: 0.7;
+    padding: 18px 10px 18px 10px;
+}
+
+.footer-content {
+    justify-content: center;
+}
+
+.footer-title   {
+color: var(--light-telegray);
+}
+
+
+.create-header-content {
+    justify-content: end;
+    text-align: center;
+}
+
+.created-user {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.user-name {
+    font-size: 30px;
+    color: var(--light-telegray);
+}
+
+.edit-container {
+    background-image: url(/img/fon2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.edit-content {
+    text-align: center;
+    padding-top: 150px;
+
+}
+
+.edit-title {
+    margin: 0;
+    color: var(--light-telegray);
+    margin-bottom: 40px;
+}
+
+.edit-title-2 {
+    font-size: 30px;
+    margin: 0;
+    color: var(--light-telegray);
+    margin-bottom: 20px;
+}
+
+.rooms {
+    background-color: rgba(43, 41, 41, 0.7);
+    width: 100%;
+    height: 800px;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+.name-room {
+    margin-right: 10px;
+    font-size: 30px;
+    color: var(--light-telegray);
+}
+
+.password-room {
+    margin-right: 10px;
+    font-size: 30px;
+    color: var(--light-telegray);
+}
+
+.game-create-form input {
+    width: 15%;
+    padding: 10px;
+    margin-right: 15px;
+    border-radius: 12px;
+
+}
+    

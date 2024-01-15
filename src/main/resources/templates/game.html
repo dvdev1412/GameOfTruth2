@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра в правду. Яркие впечатления!</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-container">
+        <div class="create-header-content flex">
+            <ul class="header-list list-reset flex">
+                <li class="header-item">
+                    <a href="#">
+                        На главную
+                    </a>
+
+                </li>
+                <li class="header-item">
+                    <a href="#">
+                        Личный кабинет
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</header>
+
+<section class="game-form">
+    <div class="room-list">
+        <h3 class="rooms-title">
+            <ul class="rooms-crate-list">
+                <li th:each="room : ${rooms}">
+                    <span th:text="${room.name}"></span>
+                </li>
+            </ul>
+        </h3>
+    </div>
+</section>
